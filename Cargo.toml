@@ -4,7 +4,7 @@ description = "No-std, low memory footprint BMP image loader"
 version = "0.3.0-alpha.1"
 authors = ["James Waples <james@wapl.es>"]
 edition = "2018"
-repository = "https://github.com/embedded-graphics/tinybmp"
+repository = "https://github.com/SKTT1Ryze/tinybmp"
 documentation = "https://docs.rs/tinybmp"
 categories = ["embedded", "no-std", "multimedia::images"]
 keywords = ["graphics", "embedded-graphics", "bmp", "bitmap", "image"]
@@ -23,5 +23,6 @@ circle-ci = { repository = "embedded-graphics/tinybmp", branch = "master" }
 name = "embedded_graphics"
 
 [dependencies]
-embedded-graphics = "0.7.0-alpha.3"
+# embedded-graphics = "0.7.0-alpha.3"
+embedded-graphics = { git = "https://github.com/SKTT1Ryze/embedded-graphics.git", branch = "sktt1ryze" }
 nom = { version = "6.0.1", default-features = false }
